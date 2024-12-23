@@ -1,3 +1,5 @@
 #selector element is arrow function
 const block = (tag) => document.querySelector(tag);
 
+#location change is history function
+history.replaceState(object, "", param);
