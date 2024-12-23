@@ -12,6 +12,7 @@ module.exports = {
     static: path.resolve(__dirname, "dist"), 
     open: true, 
     port: 5173, 
+    historyApiFallback: true,  // all location  => index.html
   },
   plugins: [
     new HtmlWebpackPlugin({
