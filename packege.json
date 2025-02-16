@@ -1,0 +1,17 @@
+{
+  "name": "webpack-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",  // Команда для сборки проекта
+    "start": "webpack serve"  // Команда для запуска dev-сервера
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.0.0",
+    "babel-loader": "^8.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "html-webpack-plugin": "^5.0.0"
+  }
+}
