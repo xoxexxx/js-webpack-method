@@ -10,7 +10,7 @@ const elem = (param) => document.querySelector(param);
 history.replaceState(object, "", param);
 
 //#promise json db
-function getJSON() {
+function getREST() {
   const promise = new Promise((resolve, reject) => {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -31,10 +31,10 @@ function getJSON() {
   });
 }
 
-getJSON("./first-db.json").then(db => {
+getREST("./first-db.json").then(db => {
     const data = JSON.parse(db);
     return data
-  }).then((data) => getJSON("db-${data.param}.json")).then(
+  }).then((data) => getREST("db-${data.param}.json")).then(
     JSON.parse,
     error => throw error
   );
